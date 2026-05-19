@@ -1,296 +1,202 @@
 <!doctype html>
-<html lang="en">
+<html lang="sk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mezodent s.r.o. | Modern Dental Clinic in Zelezovce</title>
-  <meta name="description" content="Professional dental care at Mezodent s.r.o. in Zelezovce. Preventive dentistry, hygiene, fillings, root canal treatment, crowns, prosthetics and consultations. Book your appointment.">
-  <meta name="keywords" content="dentist Zelezovce, dental clinic Zelezovce, Mezodent, zubar Zelezovce, dental hygiene, dental implants, root canal treatment">
+  <title>MezoDent | Zubná ambulancia v Želiezovciach</title>
+  <meta name="description" content="MezoDent je zubná ambulancia v Želiezovciach na adrese Komenského 36. Prijíma deti aj dospelých, poskytuje preventívnu, záchovnú, estetickú a protetickú starostlivosť.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/mezodent-logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dentist",
-    "name": "Mezodent s.r.o.",
-    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+    "name": "MezoDent s.r.o.",
     "telephone": "+421948623542",
-    "url": "https://example.com/",
+    "image": "assets/img/mezodent-logo.png",
     "sameAs": [
-      "https://www.instagram.com/mezodent_s.r.o/",
-      "https://www.facebook.com/mezodent.sk"
+      "https://www.facebook.com/mezodent.sk",
+      "https://www.instagram.com/mezodent_s.r.o/"
     ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Komenskeho 667/36",
-      "addressLocality": "Zelezovce",
-      "postalCode": "93701",
+      "streetAddress": "Komenského 36",
+      "addressLocality": "Želiezovce",
       "addressCountry": "SK"
     },
-    "openingHours": "Mo-Fr 07:30-11:30, Mo-Fr 12:00-16:00",
+    "openingHours": "Mo-Fr 07:30-16:00",
     "medicalSpecialty": "Dentistry"
   }
   </script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top clinic-nav" aria-label="Main navigation">
-    <div class="container">
-      <a class="navbar-brand brand-mark" href="index.html" aria-label="Mezodent home">
-        <span class="brand-icon">M</span><span>Mezodent</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item ms-lg-3"><a class="btn btn-primary btn-sm" href="contact.html#appointment">Book an Appointment</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="MezoDent">
+      <img src="assets/img/mezodent-logo.png" alt="MezoDent dental clinic">
+    </a>
 
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-    <div class="offcanvas-header">
-      <h2 class="offcanvas-title h5" id="mobileMenuLabel">Mezodent</h2>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body mobile-links">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="team.html">Team</a><a href="gallery.html">Gallery</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
-      <a class="btn btn-primary w-100 mt-3" href="contact.html#appointment">Book an Appointment</a>
-    </div>
-  </div>
+    <nav class="nav-links" aria-label="Hlavná navigácia">
+      <a href="#contact" data-sk="Kontakt" data-en="Contact">Kontakt</a>
+      <a href="#services" data-sk="Služby" data-en="Services">Služby</a>
+      <a href="#care" data-sk="Starostlivosť" data-en="Care">Starostlivosť</a>
+    </nav>
 
-  <header class="hero">
-    <div class="hero-media" role="img" aria-label="Bright modern dental clinic treatment room"></div>
-    <div class="container hero-content">
-      <div class="row align-items-end g-5">
-        <div class="col-lg-8" data-aos="fade-up">
-          <span class="eyebrow">Dental clinic in Zelezovce</span>
-          <h1>Modern Dental Care for a Confident, Healthy Smile</h1>
-          <p>At Mezodent, we combine careful diagnostics, gentle treatment and a personal approach to help you feel calm, informed and well cared for.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="contact.html#appointment">Book an Appointment</a>
-            <a class="btn btn-light btn-lg" href="contact.html">Contact Us</a>
-            <a class="btn btn-outline-light btn-lg" href="services.html">View Services</a>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-left" data-aos-delay="150">
-          <div class="hero-panel">
-            <span class="panel-label">Verified clinic data</span>
-            <strong>Komenskeho 667/36, 93701 Zelezovce</strong>
-            <a href="tel:+421948623542">+421 948 623 542</a>
-            <small>Mon-Fri 7:30-11:30 / 12:00-16:00</small>
-          </div>
-        </div>
-      </div>
+    <div class="language-switch" aria-label="Language switch">
+      <button class="language-button is-active" type="button" data-lang="sk" aria-pressed="true">SK</button>
+      <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
   </header>
 
-  <main>
-    <section class="section intro-strip">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7" data-aos="fade-up">
-            <span class="eyebrow dark">Complete care, clearly explained</span>
-            <h2>Private dental care that feels calm, precise and human.</h2>
-            <p>Mezodent s.r.o. is a dental clinic focused on complete, preventive and aesthetic dental care in a professional environment. The website uses verified public clinic data and clearly marks demo content until real photos and testimonials are supplied.</p>
-          </div>
-          <div class="col-lg-5">
-            <div class="trust-row" data-aos="fade-up" data-aos-delay="100">
-              <span>Vseobecna zdravotna poistovna</span>
-              <span>Dovera</span>
-              <span>Union</span>
-            </div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-main">
+        <figure class="hero-visual">
+          <picture>
+            <source media="(max-width: 620px)" srcset="assets/img/mezodent-mobile-cover.png">
+            <img src="assets/img/prevention.jpg" alt="MezoDent preventívne prehliadky s pacientom a zubnou starostlivosťou">
+          </picture>
+        </figure>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-sk="MezoDent, Želiezovce" data-en="MezoDent, Želiezovce">MezoDent, Želiezovce</p>
+          <h1 data-sk="Zdravé zuby, sebavedomý úsmev." data-en="Healthy teeth, a confident smile.">Zdravé zuby, sebavedomý úsmev.</h1>
+          <p class="hero-lead" data-sk="Komplexná stomatologická starostlivosť pre deti aj dospelých." data-en="Comprehensive dental care for children and adults.">Komplexná stomatologická starostlivosť pre deti aj dospelých.</p>
+          <p class="hero-intro" data-sk="Vitajte v MezoDent! Moderná stomatologická klinika, ktorá poskytuje vysokokvalitné služby starostlivosti o zuby pre celú rodinu." data-en="Welcome to MezoDent! A modern dental clinic providing high-quality dental care services for the whole family.">Vitajte v MezoDent! Moderná stomatologická klinika, ktorá poskytuje vysokokvalitné služby starostlivosti o zuby pre celú rodinu.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:+421948623542" data-sk="Zavolať 0948 623 542" data-en="Call +421 948 623 542">Zavolať 0948 623 542</a>
+            <a class="button button-secondary" href="#services" data-sk="Pozrieť služby" data-en="View services">Pozrieť služby</a>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-up">
-          <span class="eyebrow dark">Why patients choose Mezodent</span>
-          <h2>Confidence starts before treatment begins.</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-xl-4" data-aos="fade-up"><div class="feature-card"><i class="fa-solid fa-hand-holding-heart"></i><h3>Gentle approach</h3><p>Calm explanations, local anesthesia when needed and a care rhythm designed to reduce anxiety.</p></div></div>
-          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="75"><div class="feature-card"><i class="fa-solid fa-clipboard-check"></i><h3>Individual plans</h3><p>After diagnostics, patients receive a clear treatment recommendation before work begins.</p></div></div>
-          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="150"><div class="feature-card"><i class="fa-solid fa-shield-virus"></i><h3>Safety standards</h3><p>Sterilization, hygiene and patient safety are presented as visible trust signals throughout the site.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft-bg">
-      <div class="container">
-        <div class="section-heading with-action" data-aos="fade-up">
+      <aside class="contact-panel" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-sk="Kontakt a adresa" data-en="Contact and location">Kontakt a adresa</h2>
+        <dl class="contact-list">
           <div>
-            <span class="eyebrow dark">Popular services</span>
-            <h2>Care for health, function and natural aesthetics.</h2>
+            <dt data-sk="Telefón" data-en="Phone">Telefón</dt>
+            <dd><a href="tel:+421948623542">+421 948 623 542</a></dd>
           </div>
-          <a class="btn btn-outline-primary" href="services.html">View all services</a>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up"><a class="service-card" href="services.html#dental-hygiene"><i class="fa-solid fa-soap"></i><h3>Dental hygiene</h3><p>Professional cleaning for healthier gums, fresher breath and brighter enamel.</p></a></div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70"><a class="service-card" href="services.html#fillings"><i class="fa-solid fa-tooth"></i><h3>Fillings</h3><p>Tooth-colored restorations that repair decay with a natural look and comfortable bite.</p></a></div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140"><a class="service-card" href="services.html#root-canal-treatment"><i class="fa-solid fa-wave-square"></i><h3>Root canal treatment</h3><p>Gentle endodontic care to save infected teeth and relieve pain.</p></a></div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up"><a class="service-card" href="services.html#dental-crowns"><i class="fa-solid fa-crown"></i><h3>Crowns and bridges</h3><p>Durable restorations that rebuild strength, chewing comfort and smile balance.</p></a></div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70"><a class="service-card" href="services.html#dental-implants"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Dental implants</h3><p>Long-term tooth replacement planned individually after diagnostics.</p></a></div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140"><a class="service-card" href="services.html#teeth-whitening"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Teeth whitening</h3><p>Safe whitening options designed to brighten the smile while respecting sensitivity.</p></a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section split-section">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img class="rounded-media" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80" alt="Dentist preparing treatment room">
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <span class="eyebrow dark">Why choose us</span>
-            <h2>Clear communication. Careful diagnostics. Treatment with context.</h2>
-            <p>Patients should understand what is happening, why it matters and what the next step costs in time and comfort. Mezodent's site is structured to answer these questions before the first call.</p>
-            <ul class="check-list">
-              <li>First-visit guidance and treatment planning</li>
-              <li>Visible safety and sterilization messaging</li>
-              <li>Restorative, preventive and aesthetic service pathways</li>
-            </ul>
-            <a class="btn btn-primary" href="contact.html#appointment">Schedule Your First Visit</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft-bg">
-      <div class="container">
-        <div class="section-heading with-action" data-aos="fade-up">
           <div>
-            <span class="eyebrow dark">Our dentists</span>
-            <h2>Care from a small, focused clinical team.</h2>
+            <dt data-sk="Adresa" data-en="Address">Adresa</dt>
+            <dd>Komenského 36, Želiezovce</dd>
           </div>
-          <a class="btn btn-outline-primary" href="team.html">Meet the team</a>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6" data-aos="fade-up">
-            <article class="doctor-card">
-              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80" alt="Placeholder portrait of dentist">
-              <div><span class="tag">Verified name, demo bio</span><h3>Ielyzaveta Arsentieva</h3><p>Dentist focused on careful diagnostics, complete dental care and calm communication with patients.</p></div>
-            </article>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="90">
-            <article class="doctor-card">
-              <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=900&q=80" alt="Placeholder portrait of nurse">
-              <div><span class="tag">Verified name, demo bio</span><h3>Laura Puskova</h3><p>Nurse supporting patient comfort, preparation and safe clinical workflow during visits.</p></div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading with-action" data-aos="fade-up">
           <div>
-            <span class="eyebrow dark">Gallery preview</span>
-            <h2>A clean visual proof system for real clinic cases.</h2>
+            <dt data-sk="Ordinačné hodiny" data-en="Opening hours">Ordinačné hodiny</dt>
+            <dd data-sk="Pracovné dni 7:30 – 16:00" data-en="Weekdays 7:30 – 16:00">Pracovné dni 7:30 – 16:00</dd>
           </div>
-          <a class="btn btn-outline-primary" href="gallery.html">View gallery</a>
+          <div>
+            <dt data-sk="Noví pacienti" data-en="New patients">Noví pacienti</dt>
+            <dd data-sk="Prijímame deti aj dospelých." data-en="Children and adults are welcome.">Prijímame deti aj dospelých.</dd>
+          </div>
+        </dl>
+
+        <div class="contact-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=Komensk%C3%A9ho%2036%2C%20%C5%BDeliezovce" target="_blank" rel="noopener" data-sk="Otvoriť mapu" data-en="Open map">Otvoriť mapu</a>
+          <a href="https://www.facebook.com/mezodent.sk" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/mezodent_s.r.o/" target="_blank" rel="noopener">Instagram</a>
         </div>
-        <div class="gallery-grid">
-          <img data-aos="zoom-in" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Mezodent dental clinic reception placeholder">
-          <img data-aos="zoom-in" data-aos-delay="60" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Dental instruments and clean treatment setup">
-          <img data-aos="zoom-in" data-aos-delay="120" src="https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=800&q=80" alt="Dentist consultation placeholder">
-        </div>
-        <p class="small-note mt-3">Placeholder images. Replace with approved clinic photos and patient cases before launch.</p>
+      </aside>
+    </section>
+
+    <section class="image-strip" aria-label="MezoDent Instagram visuals">
+      <img src="assets/img/modern-care.jpg" alt="MezoDent post about modern dental care">
+      <img src="assets/img/services-overview.jpg" alt="MezoDent post about dental services">
+      <img src="assets/img/prosthetics.jpg" alt="MezoDent post about prosthetic dental solutions">
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow" data-sk="Služby" data-en="Services">Služby</p>
+        <h2 data-sk="Starostlivosť o zdravý, funkčný a prirodzený úsmev" data-en="Care for a healthy, functional and natural smile">Starostlivosť o zdravý, funkčný a prirodzený úsmev</h2>
+        <p data-sk="Obsah vychádza z informácií publikovaných MezoDent: prevencia, ošetrenie kazu, detská starostlivosť, estetické riešenia, protetika a diagnostika." data-en="The content is based on information published by MezoDent: prevention, tooth decay treatment, children's care, aesthetic solutions, prosthetics and diagnostics.">Obsah vychádza z informácií publikovaných MezoDent: prevencia, ošetrenie kazu, detská starostlivosť, estetické riešenia, protetika a diagnostika.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <h3 data-sk="Preventívne prehliadky" data-en="Preventive check-ups">Preventívne prehliadky</h3>
+          <p data-sk="Pravidelná kontrola pomáha odhaliť kaz alebo zápal včas a predísť náročnejšiemu ošetreniu." data-en="Regular check-ups help detect tooth decay or inflammation early and prevent more demanding treatment.">Pravidelná kontrola pomáha odhaliť kaz alebo zápal včas a predísť náročnejšiemu ošetreniu.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Dentálna hygiena" data-en="Dental hygiene">Dentálna hygiena</h3>
+          <p data-sk="Profesionálne odstránenie zubného kameňa podporuje zdravé ďasná, svieži dych a ochranu chrupu." data-en="Professional tartar removal supports healthy gums, fresh breath and protection of the teeth.">Profesionálne odstránenie zubného kameňa podporuje zdravé ďasná, svieži dych a ochranu chrupu.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Ošetrenie kazu a plomby" data-en="Tooth decay treatment and fillings">Ošetrenie kazu a plomby</h3>
+          <p data-sk="Ambulancia používa moderné a kvalitné materiály pri ošetrení a plombovaní s dôrazom na prirodzený výsledok." data-en="The clinic uses modern, quality materials for treatment and fillings, with attention to a natural result.">Ambulancia používa moderné a kvalitné materiály pri ošetrení a plombovaní s dôrazom na prirodzený výsledok.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Detská starostlivosť" data-en="Children's dental care">Detská starostlivosť</h3>
+          <p data-sk="Šetrné ošetrenie detského kazu a preventívne pečatenie fisúr pomáhajú chrániť detské zuby pred kazom." data-en="Gentle treatment of children's tooth decay and preventive fissure sealing help protect children's teeth from decay.">Šetrné ošetrenie detského kazu a preventívne pečatenie fisúr pomáhajú chrániť detské zuby pred kazom.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Bielenie zubov" data-en="Teeth whitening">Bielenie zubov</h3>
+          <p data-sk="Profesionálne bielenie je prezentované ako rýchle, bezpečné a šetrné k sklovine." data-en="Professional whitening is presented as fast, safe and gentle on enamel.">Profesionálne bielenie je prezentované ako rýchle, bezpečné a šetrné k sklovine.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Rekonštrukcia zubov" data-en="Tooth reconstruction">Rekonštrukcia zubov</h3>
+          <p data-sk="Rekonštrukcia obnovuje tvar, funkciu a vzhľad poškodeného alebo oslabeného zuba." data-en="Reconstruction restores the shape, function and appearance of a damaged or weakened tooth.">Rekonštrukcia obnovuje tvar, funkciu a vzhľad poškodeného alebo oslabeného zuba.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Protetika" data-en="Prosthetics">Protetika</h3>
+          <p data-sk="MezoDent uvádza korunky, mostíky a snímateľné náhrady z moderných a odolných materiálov." data-en="MezoDent lists crowns, bridges and removable dentures made from modern, durable materials.">MezoDent uvádza korunky, mostíky a snímateľné náhrady z moderných a odolných materiálov.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Extrakcia zubov" data-en="Tooth extraction">Extrakcia zubov</h3>
+          <p data-sk="Ambulancia vykonáva šetrné extrakcie vrátane zubov múdrosti s dôrazom na komfort pacienta." data-en="The clinic performs gentle extractions, including wisdom teeth, with attention to patient comfort.">Ambulancia vykonáva šetrné extrakcie vrátane zubov múdrosti s dôrazom na komfort pacienta.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="Endodontické ošetrenie" data-en="Root canal treatment">Endodontické ošetrenie</h3>
+          <p data-sk="Endodontické ošetrenie je zamerané na zachovanie zuba, úľavu od bolesti a dlhodobý komfort." data-en="Root canal treatment focuses on preserving the tooth, relieving pain and supporting long-term comfort.">Endodontické ošetrenie je zamerané na zachovanie zuba, úľavu od bolesti a dlhodobý komfort.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-sk="OPG panoramatický RTG" data-en="OPG panoramic X-ray">OPG panoramatický RTG</h3>
+          <p data-sk="OPG snímok poskytuje komplexný prehľad o chrupe, čeľustiach a okolitých štruktúrach." data-en="An OPG image provides a comprehensive view of the teeth, jaws and surrounding structures.">OPG snímok poskytuje komplexný prehľad o chrupe, čeľustiach a okolitých štruktúrach.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section testimonials-section">
-      <div class="container">
-        <div class="section-heading text-center" data-aos="fade-up">
-          <span class="eyebrow dark">Patient voices</span>
-          <h2>Demo testimonials until real reviews are approved.</h2>
-        </div>
-        <div class="swiper testimonialSwiper" data-aos="fade-up">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><blockquote>"The doctor explained everything calmly and I felt safe during the visit." <span>Demo patient review</span></blockquote></div>
-            <div class="swiper-slide"><blockquote>"Professional approach, clean clinic and clear recommendations for the next steps." <span>Demo patient review</span></blockquote></div>
-            <div class="swiper-slide"><blockquote>"I appreciated the gentle care and the practical advice after treatment." <span>Demo patient review</span></blockquote></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+    <section class="feature-band" id="care">
+      <div class="feature-media">
+        <img src="assets/img/opg-xray.jpg" alt="MezoDent post about OPG panoramic X-ray">
+        <img src="assets/img/prosthetics.jpg" alt="MezoDent post about prosthetic dental solutions">
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow" data-sk="Prečo MezoDent" data-en="Why MezoDent">Prečo MezoDent</p>
+        <h2 data-sk="Moderné vybavenie, šetrný prístup a starostlivosť bez zbytočného stresu" data-en="Modern equipment, a gentle approach and care without unnecessary stress">Moderné vybavenie, šetrný prístup a starostlivosť bez zbytočného stresu</h2>
+        <ul class="check-list">
+          <li data-sk="Moderné technológie a kvalitné materiály." data-en="Modern technology and quality materials.">Moderné technológie a kvalitné materiály.</li>
+          <li data-sk="Presná diagnostika a individuálny prístup." data-en="Precise diagnostics and an individual approach.">Presná diagnostika a individuálny prístup.</li>
+          <li data-sk="Bezbolestné a šetrné ošetrenie s dôrazom na komfort." data-en="Pain-minimizing, gentle treatment with attention to comfort.">Bezbolestné a šetrné ošetrenie s dôrazom na komfort.</li>
+          <li data-sk="Starostlivosť pre deti aj dospelých." data-en="Care for children and adults.">Starostlivosť pre deti aj dospelých.</li>
+          <li data-sk="Pri nových pacientoch ambulancia vytvorí novú kartu a v prípade potreby vyžiada predošlý záznam." data-en="For new patients, the clinic creates a new card and, if needed, requests previous records.">Pri nových pacientoch ambulancia vytvorí novú kartu a v prípade potreby vyžiada predošlý záznam.</li>
+          <li data-sk="Spolupráca so zdravotnými poisťovňami Dôvera, VšZP a Union." data-en="Cooperation with Dôvera, VšZP and Union health insurance companies.">Spolupráca so zdravotnými poisťovňami Dôvera, VšZP a Union.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section soft-bg">
-      <div class="container">
-        <div class="row g-5 align-items-start">
-          <div class="col-lg-5" data-aos="fade-right">
-            <span class="eyebrow dark">FAQ preview</span>
-            <h2>Answers that reduce hesitation.</h2>
-            <p>Patients often wait because they fear pain, price uncertainty or not knowing what will happen. The FAQ makes the first step easier.</p>
-            <a class="btn btn-primary" href="faq.html">Read all questions</a>
-          </div>
-          <div class="col-lg-7" data-aos="fade-left">
-            <div class="accordion clean-accordion" id="homeFaq">
-              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hf1">Is dental treatment painful?</button></h3><div id="hf1" class="accordion-collapse collapse show" data-bs-parent="#homeFaq"><div class="accordion-body">Most treatments are performed with local anesthesia and a gentle approach. The dentist explains each step so you know what to expect.</div></div></div>
-              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hf2">How can I book a consultation?</button></h3><div id="hf2" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">You can call the clinic, use the contact form, or message Mezodent via Instagram or Facebook.</div></div></div>
-              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hf3">Can I come with acute tooth pain?</button></h3><div id="hf3" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Contact the clinic as soon as possible. Urgent cases should be prioritized depending on availability.</div></div></div>
-              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hf4">Do you provide implants?</button></h3><div id="hf4" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Implant consultation can be presented, but final availability and protocol should be confirmed directly with the clinic.</div></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-band">
-      <div class="container">
-        <div class="cta-box" data-aos="fade-up">
-          <span class="eyebrow">Ready to take care of your smile?</span>
-          <h2>Call us or send a request and we will help you choose the right next step.</h2>
-          <div class="hero-actions justify-content-center">
-            <a class="btn btn-light btn-lg" href="tel:+421948623542">Call Now</a>
-            <a class="btn btn-outline-light btn-lg" href="contact.html#appointment">Send a Request</a>
-          </div>
-        </div>
+    <section class="cta-section">
+      <img src="assets/img/modern-care.jpg" alt="MezoDent post about modern dental care">
+      <div>
+        <p class="eyebrow" data-sk="Objednanie" data-en="Appointment">Objednanie</p>
+        <h2 data-sk="Neodkladajte starostlivosť o svoje zuby" data-en="Do not postpone care for your teeth">Neodkladajte starostlivosť o svoje zuby</h2>
+        <p data-sk="Stačí jeden telefonát a termín si dohodnete priamo s ambulanciou MezoDent v Želiezovciach." data-en="One phone call is enough to arrange your appointment directly with MezoDent in Želiezovce.">Stačí jeden telefonát a termín si dohodnete priamo s ambulanciou MezoDent v Želiezovciach.</p>
+        <a class="button button-primary" href="tel:+421948623542" data-sk="Rezervovať telefonicky" data-en="Book by phone">Rezervovať telefonicky</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4"><a class="brand-mark footer-brand" href="index.html"><span class="brand-icon">M</span><span>Mezodent</span></a><p>Modern dental care in Zelezovce with a focus on prevention, calm communication and long-term oral health.</p></div>
-        <div class="col-sm-6 col-lg-2"><h3>Pages</h3><a href="about.html">About</a><a href="services.html">Services</a><a href="team.html">Team</a><a href="gallery.html">Gallery</a></div>
-        <div class="col-sm-6 col-lg-3"><h3>Contact</h3><a href="tel:+421948623542">+421 948 623 542</a><span>Komenskeho 667/36<br>93701 Zelezovce</span><span>Mon-Fri 7:30-16:00</span></div>
-        <div class="col-lg-3"><h3>Social</h3><div class="social-links"><a href="https://www.instagram.com/mezodent_s.r.o/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.facebook.com/mezodent.sk" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></div><a href="privacy.html">Privacy Policy</a></div>
-      </div>
-      <div class="footer-bottom"><span>&copy; <span data-year></span> Mezodent s.r.o.</span><span>Demo website content: replace placeholders before launch.</span></div>
+    <p>MezoDent s.r.o. · Komenského 36, Želiezovce · <a href="tel:+421948623542">+421 948 623 542</a></p>
+    <div>
+      <a href="https://www.facebook.com/mezodent.sk" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/mezodent_s.r.o/" target="_blank" rel="noopener">Instagram</a>
     </div>
   </footer>
 
-  <div class="mobile-contact-bar">
-    <a href="tel:+421948623542"><i class="fa-solid fa-phone"></i> Call</a>
-    <a href="contact.html#appointment"><i class="fa-solid fa-calendar-check"></i> Form</a>
-    <a href="https://www.instagram.com/mezodent_s.r.o/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
